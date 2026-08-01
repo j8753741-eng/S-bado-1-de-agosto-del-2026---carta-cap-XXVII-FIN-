@@ -4,14 +4,16 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦ — Último Capítulo</title>
-
+<title>SÁBADO 1 DE AGOSTO DEL 2026 - CARTA (CAP XXVII)</title>
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 
@@ -24,52 +26,112 @@ box-sizing:border-box;
 body{
 
 background:
-radial-gradient(circle at top,#38271a 0%,#221811 45%,#130e0b 100%);
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
+
+min-height:100vh;
 
 font-family:'Cormorant Garamond',serif;
 
-display:flex;
-justify-content:center;
-align-items:center;
-
-padding:45px;
-
-min-height:100vh;
+padding:60px 20px;
 
 overflow-x:hidden;
 
 }
 
-.book{
+body::before{
 
-width:min(920px,100%);
+content:"";
 
-background:linear-gradient(180deg,#fcf8ee,#f8efde,#efe4cd);
+position:fixed;
 
-border:2px solid #c9b07b;
+inset:0;
 
-box-shadow:
-0 0 70px rgba(0,0,0,.55),
-inset 0 0 90px rgba(134,104,60,.10);
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
 
-position:relative;
+opacity:.35;
 
-overflow:hidden;
+pointer-events:none;
 
 }
 
-.book::before{
+.book{
+
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
+
+position:relative;
+
+}
+
+.cover-title{
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+color:#f7d98d;
+
+letter-spacing:3px;
+
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+
+margin-bottom:22px;
+
+}
+
+.page{
+
+background:
+linear-gradient(#f9f0d9,#efe1bf);
+
+border-radius:10px;
+
+padding:65px;
+
+position:relative;
+
+box-shadow:
+inset 0 0 30px rgba(0,0,0,.12);
+
+}
+
+.page::before{
 
 content:"";
 
 position:absolute;
 
-top:18px;
-left:18px;
-right:18px;
-bottom:18px;
+inset:0;
 
-border:1px solid rgba(155,118,69,.35);
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
 
 pointer-events:none;
 
@@ -79,98 +141,98 @@ pointer-events:none;
 
 position:absolute;
 
-font-size:30px;
+font-size:44px;
 
-color:#b89c67;
+color:#b08a45;
 
-opacity:.35;
-
-}
-
-.c1{top:18px;left:22px;}
-.c2{top:18px;right:22px;}
-.c3{bottom:18px;left:22px;}
-.c4{bottom:18px;right:22px;}
-
-.page{
-
-padding:70px 70px 110px;
-
-position:relative;
+opacity:.7;
 
 }
 
-.top{
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
+
+.header{
 
 text-align:center;
 
-color:#86613a;
-
-letter-spacing:10px;
-
-font-size:24px;
-
-margin-bottom:20px;
+margin-bottom:55px;
 
 }
 
-.book-name{
+.header h1{
 
 font-family:'Cinzel',serif;
 
-text-align:center;
+font-size:2rem;
 
-font-size:18px;
+line-height:1.5;
 
-letter-spacing:4px;
+color:#5b3213;
 
-color:#624426;
-
-margin-bottom:35px;
-
-}
-
-.final-mark{
-
-text-align:center;
-
-font-family:'Cinzel',serif;
-
-font-size:14px;
-
-letter-spacing:6px;
-
-color:#8d6941;
-
-margin-bottom:18px;
-
-}
-
-.chapter{
-
-text-align:center;
-
-font-family:'Cinzel',serif;
-
-font-size:38px;
-
-letter-spacing:5px;
-
-color:#4c341f;
-
-margin-bottom:12px;
+margin-bottom:22px;
 
 }
 
 .date{
 
-text-align:center;
+font-size:1rem;
 
-font-size:18px;
+color:#7b5c2e;
 
-color:#795937;
+letter-spacing:1px;
 
-margin-bottom:55px;
+}
+
+.greeting{
+
+margin-top:35px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:3rem;
+
+color:#7b4323;
+
+margin-bottom:28px;
+
+}
+
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
+}
+
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+strong{
+
+font-weight:700;
 
 }
 
@@ -178,95 +240,87 @@ margin-bottom:55px;
 
 text-align:center;
 
-font-size:22px;
+font-size:26px;
 
-letter-spacing:12px;
+margin:35px 0;
 
-color:#a88454;
-
-margin-bottom:45px;
+color:#9b7643;
 
 }
 
-.letter{
+.page-turn{
 
-border:1px dashed rgba(145,108,60,.45);
-
-background:rgba(255,255,255,.15);
-
-padding:45px;
-
-line-height:2.05;
-
-font-size:22px;
-
-color:#523b23;
-
-min-height:360px;
-
-}
-
-.placeholder{
+margin:55px auto 25px;
 
 text-align:center;
 
-padding-top:90px;
+}
 
-font-size:24px;
+.page-turn-text{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.25rem;
+
+color:#7a5b39;
+
+line-height:1.8;
+
+margin-bottom:28px;
 
 font-style:italic;
 
 }
 
-.note{
+.page-corner{
 
-margin-top:40px;
+display:inline-flex;
 
-text-align:center;
+align-items:center;
 
-font-size:19px;
+justify-content:center;
 
-font-style:italic;
+width:170px;
 
-color:#67492a;
+height:70px;
 
-line-height:1.9;
+background:linear-gradient(145deg,#f8f0dc,#ead8b3);
 
-}
+border:2px solid #c9a36b;
 
-.next{
+text-decoration:none;
 
-margin:45px auto 0;
-
-width:max-content;
-
-padding:14px 26px;
-
-border:1px solid #b99767;
-
-background:rgba(255,248,232,.45);
-
-color:#68492b;
+color:#6b4725;
 
 font-family:'Cinzel',serif;
 
-letter-spacing:3px;
+font-size:.9rem;
+
+letter-spacing:2px;
+
+clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.18);
+
+transition:.35s;
 
 }
 
-.page-number{
+.page-corner:hover{
 
-position:absolute;
+transform:translateY(-5px) rotate(-2deg);
 
-bottom:28px;
+box-shadow:
+0 18px 35px rgba(0,0,0,.28);
 
-right:40px;
+}
 
-color:#755635;
+.page-corner span{
 
-font-size:17px;
+padding:0 12px;
 
-letter-spacing:2px;
+text-align:center;
 
 }
 
@@ -278,671 +332,412 @@ letter-spacing:2px;
 
 <div class="book">
 
+<div class="cover-title">
+
+✦ Donde Siempre Vuelve Mi Corazón ✦
+
+</div>
+
+<div class="page">
+
 <div class="corner c1">❦</div>
 <div class="corner c2">❦</div>
 <div class="corner c3">❦</div>
 <div class="corner c4">❦</div>
 
-<section class="page">
+<div class="header">
+  
+<h1>
 
-<div class="top">
+<strong>CAPÍTULO XXVII</strong>
 
-✦ ❦ ✦ ❦ ✦ ❦ ✦
+<br><br>
 
-</div>
+<strong>
 
-<div class="book-name">
+CUANDO LA NOCHE GUARDÓ UN SECRETO ENTRE SUS PÁGINAS Y MI CORAZÓN ESCRIBIÓ TU NOMBRE EN SILENCIO
 
-✦ DONDE SIEMPRE VUELVE MI CORAZÓN ✦
+</strong>
 
-</div>
-
-<div class="final-mark">
-
-PRIMER VOLUMEN
-
-</div>
-
-<div class="chapter">
-
-CAPÍTULO XXVII
-
-</div>
+</h1>
 
 <div class="date">
 
-Sábado 1 de agosto de 2026 • Noche
+<strong>Sábado, 1 de agosto del 2026 – Noche</strong>
+
+</div>
+    
+</div>
+
+<div class="greeting">
+
+MI ESTRELLA DE CRISTAL ETERNO:
 
 </div>
 
-<div class="divider">
+<p class="first">
 
-❦ ✦ ❦
+Esta noche siento que el tiempo camina más lento de lo normal. Es extraño cómo unas horas pueden parecer eternas cuando lo único que uno desea es volver a mirar a la persona que hace que todo tenga sentido. Hoy mi corazón volvió a abrir estas páginas solamente para escribirte, porque hay sentimientos que no pueden quedarse guardados en silencio y necesitan encontrar un lugar donde vivir.
+
+</p>
+
+<p>
+
+Hoy te extrañé muchísimo, como tantas otras veces, pero hubo algo diferente… como si mi corazón estuviera contando cada minuto que falta para volver a encontrarse con el tuyo. Faltan exactamente <strong>27 horas y 30 minutos</strong> para poder verte de nuevo, para volver a compartir esos pequeños momentos que para mí significan más que cualquier cosa enorme que pueda existir.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Porque contigo aprendí que no necesito grandes escenarios para ser feliz. A veces basta con estar a tu lado en el colegio, caminar juntos, mirarte mientras hablamos, sentir esa tranquilidad que aparece cuando sé que estás cerca. Son esos pequeños instantes los que mi corazón guarda como los tesoros más valiosos de su propia historia.
+
+</p>
+
+<p>
+
+Mi <strong>Estrella de Cristal Eterno</strong>, hay noches en las que quisiera poder detener el reloj y quedarme un poco más en esos momentos contigo. Quisiera guardar tus sonrisas, tus miradas, tus abrazos y hasta esos silencios que compartimos, porque incluso cuando no decimos nada, siento que mi alma está hablando con la tuya.
+
+</p>
+
+<p>
+
+Hoy, mientras escribo estas palabras, pienso en todo lo que hemos vivido, en cada día que se convirtió en un recuerdo, en cada conversación que me hizo sonreír y en cada momento donde confirmé que eres alguien demasiado especial para mí.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Tal vez no siempre encuentro las palabras perfectas, tal vez a veces mis emociones son más grandes que mi forma de expresarlas, pero hay algo que siempre será verdad: mi corazón te elige una y otra vez.
+
+</p>
+
+<p>
+
+Quiero que sepas que aunque esta noche no pueda estar a tu lado, hay una parte de mí que está contigo. Está en esos pensamientos antes de dormir, en esas ganas de verte de nuevo y en esa ilusión de saber que pronto volveré a tenerte cerca.
+
+</p>
+
+<p>
+
+Gracias por ser esa persona que llegó a mi vida y convirtió días normales en recuerdos extraordinarios. Gracias por cada sonrisa, por cada momento, por cada pequeño detalle que quizás para ti parece sencillo, pero para mí significa muchísimo.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Y cuando llegue el momento de verte otra vez, quiero aprovechar cada segundo. Quiero volver a sentir esa felicidad de estar contigo, esa sensación de que por un instante el mundo se detiene y solamente existimos tú y yo.
+
+</p>
+
+<p>
+
+Mi <strong>Estrella de Cristal Eterno</strong>, sigue brillando como siempre. Yo seguiré cuidando este amor con todo mi corazón, porque hay historias que no se escriben solamente con tinta… se escriben con recuerdos, con emociones y con un amor que se siente hasta en los días donde la distancia aparece.
+
+</p>
+
+<p>
+
+Esta noche cierro estas páginas con una sonrisa, porque sé que mañana habrá un nuevo momento para nosotros, una nueva mirada, una nueva sonrisa y otro recuerdo que guardar.
+
+</p>
+
+<p>
+
+Hasta entonces, guarda un pedacito de mi corazón contigo, porque el mío ya lleva mucho tiempo guardando tu nombre.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p style="text-align:center;">
+
+<strong>
+
+Con todo mi amor,
+
+<br><br>
+
+tu persona que siempre te extraña un poquito más cuando no puede verte. ❤️
+
+</strong>
+
+</p>
+
+    
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
+
+}
+
+.book-quote::before{
+
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#8b3dff;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
+
+</style>
+
+    
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+Hay amores que llegan como una pequeña luz en medio de la oscuridad, pero existen otros que llegan para convertirse en el amanecer completo de una vida. Tú eres esa luz que mi corazón reconoce incluso cuando no estás cerca, esa persona que logró transformar días normales en recuerdos que quisiera guardar para siempre. Si algún día el tiempo intenta correr demasiado rápido o la distancia intenta hacerse sentir, recordaré que mi lugar favorito siempre será aquel donde está tu sonrisa, porque entre millones de caminos mi corazón encontró uno solo que quiere seguir recorriendo: el que lleva hacia ti.
+
+<br><br>
+
+✨ <span style="font-size:1.65rem;">VALERIA PETRO VILLAZÓN</span> ❤️
+
+</strong>
+
+</p>
 
 </div>
 
-<div class="letter">
+<style>
 
-<div class="placeholder">
+/*=========================================
+SELLO DE CERA
+=========================================*/
 
-<strong>[Aquí irá la última carta del libro.]</strong>
+.seal-container{
+
+display:flex;
+
+justify-content:center;
+
+margin:45px 0 15px;
+
+}
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+transition:.35s ease;
+
+}
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+}
+
+.ribbon{
+
+width:6px;
+
+height:95px;
+
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
+
+margin:0 auto;
+
+border-radius:5px;
+
+}
+
+.end-message{
+
+margin-top:28px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.3rem;
+
+color:#7b4323;
+
+}
+
+.page-number{
+
+margin-top:40px;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
+
+}
+
+</style>
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Viernes-31-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
 
 </div>
 
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>
+
+Esta noche una nueva página espera ser descubierta, porque las historias más hermosas nunca terminan… solamente continúan.
+
+</strong>
+
+</p>
+  
+<a href="AQUÍ_PONES_EL_LINK_DEL_EPÍLOGO"
+class="page-corner">
+
+<span>
+
+✦ Abrir el Epílogo ✦
+
+</span>
+
+</a>
+
 </div>
 
-<div class="note">
+<div class="ribbon"></div>
 
-Las páginas que siguen ya no pertenecen a un capítulo...<br>
-pertenecen a todo aquello que estas hojas aprendieron a guardar en silencio.
+<div class="end-message">
+
+<strong>
+
+Que nuestro amor siempre encuentre una nueva página donde volver a comenzar. ❤️
+
+</strong>
 
 </div>
 
-<div class="next">
-
-✦ EPÍLOGO A CONTINUACIÓN ✦
-
-</div>
-
+  
 <div class="page-number">
 
 ❦ &nbsp; XXVII &nbsp; ❦
 
 </div>
 
-</section>
-
-
-<section class="page" style="page-break-before:always;">
-
-<div class="top">
-
-❦ ✧ ❦ ✧ ❦ ✧ ❦
-
 </div>
-
-<div class="book-name">
-
-✦ DONDE SIEMPRE VUELVE MI CORAZÓN ✦
-
-</div>
-
-<div class="final-mark">
-
-EPÍLOGO
-
-</div>
-
-<div class="chapter" style="font-size:42px;">
-
-✦ EL ÚLTIMO SUSPIRO DE ESTAS PÁGINAS ✦
-
-</div>
-
-<div class="date">
-
-Domingo 5 de julio de 2026 — Sábado 1 de agosto de 2026
-
-</div>
-
-<div class="divider">
-
-✦ ❦ ✦
-
-</div>
-
-<div class="letter" style="text-align:center;">
-
-<p>
-
-Hubo un tiempo en que estas hojas eran solamente papel.
-
-</p>
-
-<br>
-
-<p>
-
-Entonces una historia comenzó a escribirse...
-
-una noche tras otra,
-
-sin prisa,
-
-sin promesas de convertirse en un libro,
-
-solo con el deseo de guardar aquello que el tiempo jamás debía olvidar.
-
-</p>
-
-<br>
-
-<p>
-
-Desde el <strong>domingo 5 de julio de 2026</strong>,
-
-cada anochecer dejó aquí un nuevo latido,
-
-una nueva página,
-
-un nuevo recuerdo.
-
-</p>
-
-<br>
-
-<p>
-
-Veintisiete capítulos después,
-
-estas hojas ya no pesan por la tinta...
-
-pesan por todo aquello que aprendieron a guardar.
-
-</p>
-
-<br>
-
-<p>
-
-Aquí quedaron sonrisas,
-
-esperas,
-
-silencios,
-
-abrazos,
-
-promesas,
-
-lágrimas,
-
-perdones,
-
-esperanzas
-
-y el inmenso privilegio de haber amado un día más.
-
-</p>
-
-<br>
-
-<p>
-
-Por eso este libro no baja la mirada al llegar a su última página.
-
-La cierra con gratitud,
-
-porque comprendió que ninguna historia escrita con el corazón desaparece.
-
-</p>
-
-<br>
-
-<p>
-
-Las cubiertas podrán cerrarse...
-
-pero aquello que dio vida a cada capítulo seguirá respirando mucho después de que el último punto haya sido escrito.
-
-</p>
-
-</div>
-
-<div class="note">
-
-✦ Todo libro encuentra un final... pero solamente algunos tienen la fortuna de convertirse en un recuerdo eterno. ✦
-
-</div>
-
-<div class="next">
-
-✦ REGISTRO DEL PRIMER VOLUMEN ✦
-
-</div>
-
-<div class="page-number">
-
-❦ &nbsp; EPÍLOGO &nbsp; ❦
-
-</div>
-
-</section>
-
-  
-<section class="page" style="page-break-before:always;">
-
-<div class="top">
-
-✦ ✧ ❦ ✧ ✦ ✧ ❦
-
-</div>
-
-<div class="book-name">
-
-✦ DONDE SIEMPRE VUELVE MI CORAZÓN ✦
-
-</div>
-
-<div class="final-mark">
-
-REGISTRO DE LA OBRA
-
-</div>
-
-<div class="chapter" style="font-size:38px;">
-
-✦ PRIMER VOLUMEN ✦
-
-</div>
-
-<div class="date">
-
-Edición Conmemorativa
-
-</div>
-
-<div class="divider">
-
-❦ ✦ ❦ ✦ ❦
-
-</div>
-
-<div class="letter" style="padding:55px;">
-
-<table style="width:100%;border-collapse:collapse;font-size:22px;line-height:2.3;">
-
-<tr>
-<td style="width:38%;color:#6f4d2d;"><strong>Obra</strong></td>
-<td>✦ Donde Siempre Vuelve Mi Corazón ✦</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Volumen</strong></td>
-<td>Primero</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Inicio de la historia</strong></td>
-<td>Domingo 5 de julio de 2026</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Última página</strong></td>
-<td>Sábado 1 de agosto de 2026</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Capítulos escritos</strong></td>
-<td>XXVII</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Noches compartidas</strong></td>
-<td>28</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Autor</strong></td>
-<td>
-<strong>JUAN KALETH MENDOZA PRIMERA</strong><br>
-<em>• EL AMOR DE TU VIDA •</em>
-</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Única musa</strong></td>
-<td>
-<strong>VALERIA PETRO VILLAZÓN</strong><br>
-<em>• LA ÚNICA MUSA DE ESTA HISTORIA •</em>
-</td>
-</tr>
-
-<tr>
-<td style="color:#6f4d2d;"><strong>Estado de la obra</strong></td>
-<td>Primer volumen concluido.</td>
-</tr>
-
-</table>
-
-<div style="margin-top:55px;text-align:center;font-size:22px;line-height:2;">
-
-❦
-
-<br><br>
-
-<strong>
-Que toda persona que vuelva a abrir estas páginas recuerde que fueron escritas una noche a la vez, siempre con la esperanza de conservar aquello que el tiempo jamás debía borrar.
-</strong>
-
-</div>
-
-</div>
-
-<div class="note">
-
-✦ Todo lo que aquí quedó escrito ya pertenece para siempre a la memoria de este libro. ✦
-
-</div>
-
-<div style="display:flex;justify-content:center;margin-top:45px;">
-
-<div id="royalSeal"
-
-style="
-width:110px;
-height:110px;
-border-radius:50%;
-background:radial-gradient(circle,#b34747,#6a1717 72%);
-border:5px solid #d8b77d;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:34px;
-color:#f8edd8;
-box-shadow:0 0 22px rgba(0,0,0,.35);
-">
-
-❦
-
-</div>
-
-</div>
-
-<div class="next">
-
-✦ FIN DEL PRIMER VOLUMEN ✦
-
-</div>
-
-<div class="page-number">
-
-❦ &nbsp; REGISTRO &nbsp; ❦
-
-</div>
-
-</section>
-
-  
-<section class="page" id="finalPage" style="page-break-before:always;">
-
-<div class="top">
-
-✦ ❦ ✦ ❦ ✦ ❦ ✦
-
-</div>
-
-<div class="book-name">
-
-✦ DONDE SIEMPRE VUELVE MI CORAZÓN ✦
-
-</div>
-
-<div class="final-mark">
-
-EDICIÓN CONMEMORATIVA
-
-</div>
-
-<div class="chapter" style="font-size:44px;">
-
-✦ FIN DEL PRIMER VOLUMEN ✦
-
-</div>
-
-<div class="divider">
-
-❦ ✦ ❦ ✦ ❦
-
-</div>
-
-<div class="letter" style="text-align:center;min-height:420px;display:flex;flex-direction:column;justify-content:center;">
-
-<div id="finalPhrase" style="font-size:28px;line-height:1.8;transition:opacity .8s ease;">
-
-Todo viaje merece una última página...
-<br><br>
-pero las mejores historias siempre encuentran una razón para volver a comenzar.
-
-</div>
-
-<div style="margin-top:70px;display:flex;justify-content:center;">
-
-<div id="endSeal"
-
-style="
-width:130px;
-height:130px;
-border-radius:50%;
-background:radial-gradient(circle,#b34545,#651414 72%);
-border:5px solid #d8b77d;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:42px;
-cursor:pointer;
-transition:.35s;
-box-shadow:0 0 25px rgba(0,0,0,.35);
-user-select:none;
-">
-
-❦
-
-</div>
-
-</div>
-
-<p style="margin-top:18px;font-size:17px;letter-spacing:2px;color:#755634;">
-
-Pulsa el sello para cerrar el libro
-
-</p>
-
-</div>
-
-<div class="page-number">
-
-❦ &nbsp; FIN &nbsp; ❦
-
-</div>
-
-</section>
-
-<div id="endingScreen"
-
-style="
-position:fixed;
-inset:0;
-background:#120d09;
-display:none;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-color:#f3ead6;
-text-align:center;
-padding:40px;
-z-index:9999;
-animation:fadeIn 1.5s;
-">
-
-<div id="closingBook"
-
-style="
-font-size:90px;
-animation:closeBook 3s ease forwards;
-">
-
-📖
-
-</div>
-
-<h1 style="
-margin-top:35px;
-font-family:'Cinzel',serif;
-letter-spacing:5px;
-font-size:38px;
-">
-
-✦ FIN DEL PRIMER VOLUMEN ✦
-
-</h1>
-
-<p id="hiddenMessage"
-
-style="
-margin-top:35px;
-max-width:760px;
-font-size:24px;
-line-height:2;
-opacity:0;
-animation:showMessage 2s forwards;
-animation-delay:3s;
-">
-
-Este volumen ha llegado a su última página.
-
-<br><br>
-
-Gracias por recorrer esta historia y permitir que cada capítulo encontrara su lugar entre estas hojas.
-
-<br><br>
-
-Las cubiertas podrán cerrarse por ahora...
-
-pero toda historia que deja huella siempre encuentra el momento adecuado para abrir un nuevo volumen.
-
-</p>
-
-<button id="continueButton"
-
-style="
-margin-top:55px;
-display:none;
-padding:16px 34px;
-font-family:'Cinzel',serif;
-font-size:17px;
-letter-spacing:3px;
-background:#d7b77c;
-border:none;
-cursor:pointer;
-border-radius:4px;
-transition:.3s;
-">
-
-✦ CONTINUARÁ... ✦
-
-</button>
-
-</div>
-
-<style>
-
-@keyframes fadeIn{
-
-from{opacity:0;}
-to{opacity:1;}
-
-}
-
-@keyframes closeBook{
-
-0%{
-
-transform:scale(1) rotateY(0deg);
-
-}
-
-100%{
-
-transform:scale(.75) rotateY(90deg);
-opacity:.2;
-
-}
-
-}
-
-@keyframes showMessage{
-
-from{
-
-opacity:0;
-transform:translateY(20px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-#endSeal:hover{
-
-transform:scale(1.08);
-
-}
-
-</style>
-
-<script>
-
-const frases=[
-
-"Todo viaje merece una última página...<br><br>pero las mejores historias siempre encuentran una razón para volver a comenzar.",
-
-"Cada página escrita permanece viva mientras exista alguien dispuesto a volver a leerla.",
-
-"Los libros pueden cerrarse, pero los recuerdos continúan escribiéndose más allá de sus cubiertas.",
-
-"Todo final guarda en silencio el comienzo de un nuevo capítulo."
-
-];
-
-let indice=0;
-
-setInterval(()=>{
-
-indice=(indice+1)%frases.length;
-
-const texto=document.getElementById("finalPhrase");
-
-texto.style.opacity=0;
-
-setTimeout(()=>{
-
-texto.innerHTML=frases[indice];
-
-texto.style.opacity=1;
-
-},500);
-
-},5000);
-
-document.getElementById("endSeal").onclick=()=>{
-
-document.getElementById("endingScreen").style.display="flex";
-
-setTimeout(()=>{
-
-document.getElementById("continueButton").style.display="inline-block";
-
-},6000);
-
-};
-
-document.getElementById("continueButton").onclick=()=>{
-
-alert("El siguiente volumen comenzará cuando llegue el momento adecuado.");
-
-};
-
-</script>
 
 </div>
 
 </body>
-
 </html>
